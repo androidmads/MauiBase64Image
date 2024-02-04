@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBase64Image.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                x:Name="base64Result"
+                Text=""
+                MaxLines="5"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="12"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="EncodeBtn"
+                Text="Base64 Encode"
+                Clicked="OnEncodeClicked"
+                HorizontalOptions="Center" />
+
+            <Image
+                x:Name="imagePreview"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="DecodeBtn"
+                Text="Base64 Decode"
+                Clicked="OnDecodeClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
